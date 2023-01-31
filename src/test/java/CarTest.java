@@ -28,4 +28,17 @@ class CarTest {
         // THEN
         assertEquals(expectedFinalVelocity, result);
     }
+    @Test
+    void testBrake() {
+        // GIVEN
+        Car c = new Car();
+        c.setVelocity(30);
+        int expectedFinalVelocity = 0;
+
+        // WHEN
+        int result = c.brake();
+
+        // THEN
+        assertEquals(expectedFinalVelocity, result);
+    }
 }

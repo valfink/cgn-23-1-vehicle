@@ -7,4 +7,10 @@ public class Car extends Vehicle{
         System.out.println("New velocity is: " + getVelocity());
         return getVelocity();
     }
+
+    @Override
+    public int brake() {
+        setVelocity(0);
+        return getVelocity();
+    }
 }

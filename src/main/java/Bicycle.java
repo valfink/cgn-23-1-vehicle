@@ -12,4 +12,10 @@ public class Bicycle extends Vehicle {
         }
             return getVelocity();
     }
+
+    @Override
+    public int brake() {
+        setVelocity(0);
+        return getVelocity();
+    }
 }

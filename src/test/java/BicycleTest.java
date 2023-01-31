@@ -44,4 +44,18 @@ public class BicycleTest {
         assertEquals(expectedFinalVelocity, result);
 
     }
+    @Test
+    void testBrake() {
+        // GIVEN
+        Bicycle b = new Bicycle();
+        b.setVelocity(10);
+        int expectedFinalVelocity = 0;
+
+        // WHEN
+        int result = b.brake();
+
+        // THEN
+        assertEquals(expectedFinalVelocity, result);
+
+    }
 }
