@@ -16,4 +16,16 @@ class CarTest {
         // THEN
         assertEquals(expectedFinalVelocity, result);
     }
+    @Test
+    void testAccelerate_withoutInitialSpeed() {
+        // GIVEN
+        Car c = new Car();
+        int expectedFinalVelocity = 50;
+
+        // WHEN
+        int result = c.accelerate(50);
+
+        // THEN
+        assertEquals(expectedFinalVelocity, result);
+    }
 }

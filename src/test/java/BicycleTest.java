@@ -18,6 +18,19 @@ public class BicycleTest {
 
     }
     @Test
+    void testAccelerate_lowSpeed_withoutInitialSpeed() {
+        // GIVEN
+        Bicycle b = new Bicycle();
+        int expectedFinalVelocity = 20;
+
+        // WHEN
+        int result = b.accelerate(20);
+
+        // THEN
+        assertEquals(expectedFinalVelocity, result);
+
+    }
+    @Test
     void testAccelerate_highSpeed() {
         // GIVEN
         Bicycle b = new Bicycle();
